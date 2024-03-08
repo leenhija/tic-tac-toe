@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <section>
+    <div class="title" id="title"><h1>Tic Tac Toe</h1></div>
+</section>
+<section class="players" id="players">
+    <input id="player_1" class="player_1" type="text" placeholder="Player one name?"/>
+    <input id="player_2" class="player_2" type="text" placeholder="Player two name?"/>
+    <button class="start" id="start" onclick="start_game()" >Start</button>
+</section>
+<section class="container">
+    <div class="board" id="board">
+   <button  id="c1" class="c1 cell"></button>
+   <button id="c2" class="c2 cell"></button>
+   <button id="c3"class="c3 cell"></button>
+   <button id="c4" class="c4 cell"></button>
+   <button id="c5" class="c5 cell"></button>
+   <button id="c6" class="c6 cell"></button>
+   <button id="c7" class="c7 cell"></button>
+   <button id="c8" class="c8 cell"></button>
+   <button id="c9" class="c9 cell"></button>
+    </div>
+</section>
+   <section>
+    <button class="reset" id="reset" onclick='restart()'></button>
+   </section>
+   <section id="winning" class="winning">
+    <div id="winner" class="winner" >
+    </div>
+   </section>
+   <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
